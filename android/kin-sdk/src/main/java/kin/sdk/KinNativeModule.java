@@ -31,13 +31,8 @@ public class KinNativeModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void sayHi(Callback errorCallback, Callback successCallback) {
-        try {
-            System.out.println("Greetings from Java");
-            successCallback.invoke("Callback : Greetings from Java");
-        } catch (IllegalViewOperationException e) {
-            errorCallback.invoke(e.getMessage());
-        }
+    public String sayHi() {
+        return "Callback : Greetings from Java: I know, i know";
     }
 
     @ReactMethod
