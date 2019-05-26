@@ -1,0 +1,33 @@
+{
+  "name": "react-native-kin-sdk",
+  "version": "1.0.0",
+  "description": "React Native wrapper for Kin SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "preversion": "git checkout master && git pull && npm run test",
+    "version": "",
+    "postversion": "git push --all && git push --tags",
+    "release-patch": "npm version patch",
+    "release-minor": "npm version minor",
+    "release-major": "npm version major",
+    "publish-to-npm": "npm publish"
+  },
+  "keywords": [
+    "react-native",
+    "kin",
+    "kin-ecosystem",
+    "ios",
+    "android"
+  ],
+  "author": "Harrison Favour",
+  "license": "MIT",
+  "homepage": "https://github.com/grantfayvor/react-native-kin-sdk.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grantfayvor/react-native-kin-sdk.git"
+  },
+  "peerDependencies": {
+    "react-native": "^0.57.0"
+  }
+}
